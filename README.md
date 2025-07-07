@@ -22,11 +22,3 @@ print(Array(set))  // [5, 10, 20]
 
 set.remove(10)
 print(Array(set))  // [5, 20]
-
-
-### ✅ Copy-on-Write (COW) Support
-`SwiftLiveOrderedSet` now implements copy-on-write semantics. This means:
-- Multiple set copies share storage efficiently until one is mutated.
-- You get true Swift-style value type behavior.
-
-[![COW Supported](https://img.shields.io/badge/COW-Supported-brightgreen)](https://github.com/your-repo-link)
