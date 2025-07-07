@@ -6,7 +6,13 @@ A pure Swift package providing a `SwiftLiveOrderedSet<Element: Comparable>` — 
 ✅ Unique elements  
 ✅ Always sorted (like C++ `std::set`)  
 ✅ O(log n) insert, remove, contains  
-✅ Fast in-order iteration  
+✅ Fast in-order iteration
+### ✅ Copy-on-Write (COW) Support
+`SwiftLiveOrderedSet` now implements copy-on-write semantics. This means:
+- Multiple set copies share storage efficiently until one is mutated.
+- You get true Swift-style value type behavior.
+
+[![COW Supported](https://img.shields.io/badge/COW-Supported-brightgreen)](https://github.com/your-repo-link)
 
 ## Usage
 
