@@ -17,6 +17,8 @@ A pure Swift package providing a `SwiftLiveOrderedSet<Element: Comparable>` — 
 [![Swift Package Index](https://swiftpackageindex.com/sddeno/SwiftLiveOrderedSet/badge.svg)](https://swiftpackageindex.com/sddeno/SwiftLiveOrderedSet)
 
 
+
+
 ## Usage
 
 ```swift
