@@ -13,6 +13,7 @@ A pure Swift package providing a `SwiftLiveOrderedSet<Element: Comparable>` — 
 - You get true Swift-style value type behavior.
 
 [![COW Supported](https://img.shields.io/badge/COW-Supported-brightgreen)](https://github.com/your-repo-link)
+
 [![Swift Package Index](https://swiftpackageindex.com/sddeno/SwiftLiveOrderedSet/badge.svg)](https://swiftpackageindex.com/sddeno/SwiftLiveOrderedSet)
 
 
