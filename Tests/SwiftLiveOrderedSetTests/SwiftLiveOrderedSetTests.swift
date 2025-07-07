@@ -57,4 +57,15 @@ final class SwiftLiveOrderedSetTests: XCTestCase {
         let sorted = Array(set)
         XCTAssertEqual(sorted, [10, 30, 50, 70], "Set should maintain live sorted order after removal")
     }
+    
+    
+    func testValueSemantics() { // COW (Copy on Write)
+        var set = SwiftLiveOrderedSet<Int>()
+        set.insert(10)
+        var set2 = set
+        set.insert(5)
+        
+        XCTAssertEqual(Array(set), [5, 10])
+        XCTAssertEqual(Array(set2), [10])
+    }
 }

@@ -203,4 +203,9 @@ final class AVLTree<Element: Comparable> {
         return y
     }
 
+    func copy() -> AVLTree<Element> {
+        let newTree = AVLTree<Element>()
+        self.inOrderTraversal { newTree.insert($0) }
+        return newTree
+    }
 }
